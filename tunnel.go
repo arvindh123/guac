@@ -64,7 +64,7 @@ type SimpleTunnel struct {
 
 // NewSimpleTunnel creates a new tunnel
 func NewSimpleTunnel(stream *Stream) *SimpleTunnel {
-	val , err := uuid.NewV4()
+	val , _ := uuid.NewV4()
 	return &SimpleTunnel{
 		stream: stream,
 		uuid:   val,
